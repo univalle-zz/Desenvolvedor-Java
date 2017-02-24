@@ -1,29 +1,60 @@
-Teste de Frontend Univalle
+Teste de Java FullStack Univalle
 ========
 
-Olá, 
-nesse teste tentamos simular o que você irá encontrar no dia a dia de trabalho 
-como Frontend na Univalle.
+Nesse teste tentamos simular o que você irá encontrar no dia a dia de trabalho na Univalle.
 
-### A sua tarefa
 
-Após clonar este repositório, você encontrará um arquivo JSON como a seguir:
-```JSON
-{
-    "credential": {
-        "user": "exemplo@exemplo.com",
-        "password": "123quatro5678",
-        "error_message": "Email ou senha está errado"
-    },
-    "key": "d6f67bc92bbaf06ec44b828d0da4eda9"
-}
+### **Java**
+
+Neste teste iremos utilizar o java 8. Como referência de estrutura, utilize o arquivo .rar disponibiliado na pasta java/\*.rar dentro do repositório
+
+1) Nosso sistema irá usar um framework para importação de arquivos texto chamado Fixedformat4j.
+
+-- Insira as dependências necessárias e crie um model para o seguinte layout de produto:
+
+ 
+```
+ Nome do Produto (20 chars);
+
+ Código do produto (10 chars);
+
+ Preço do Produto (8 casas com 3 decimais);
+
+ Data da Compra (10 chars com formatação de data yyyyMMdd).
 ```
 
-A sua tarefa é criar uma aplicação responsiva usando AngularJS que  valide 
-o login usando as credenciais acima e passe o _hash_ contido em 'key' entre 
-_Controllers_, para ser mostrado na última tela, usando _Service_ ou _Factory_.
+2) Crie um serviço para inserir um produto assim como existe para Grupo de Produtos.
 
-### As regras
+3) Faça as modificações abaixo:
+
+a) No grupo de GrupoProdutosDAO crie um filtro, como achar melhor, para os produtos onde o nome começa por um parâmetro String.
+
+b) Crie a mesma funcionalidade usando stream e lambda.
+
+
+4) Muitas vezes vamos trabalhar remotamente, para ser possível o acesso do nosso ambiente de produção externamente, configure o jboss para receber requisições de fora.
+
+5) Nossos modelos estão muito pobres, precisamos que todos eles, tenham um indicador de três estados possíveis:
+
+-- importado
+
+-- nativo
+
+-- inativo
+
+Além disso cada modelo DEVE implementar um método de validação, faça com que estes requisitos sejam cumpridos.
+
+
+### **FrontEnd**
+
+
+
+* **A sua tarefa**
+
+A sua tarefa é criar uma aplicação responsiva usando AngularJS, que realize a inserção 
+de um produto na API JAVA, para ser mostrado na tela de produtos, usando _Service_ ou _Factory_.
+
+* **As regras**
 
 Esses itens são obrigatórios. Não respeitá-los inválida automaticamente a 
 sua submissão. Criamos algumas telas, mas sinta-se a vontade para criar suas próprias.
@@ -39,27 +70,17 @@ for modificado
 - Use um Gerenciador de Pacotes (Bower, NPM, etc)
 - Você deve tratar os erros
 
-### Esperamos que você:
+* **Esperamos que você**:
 
 Encare esses itens como "Boas Práticas".
 
-- Um README, em inglês, explicando as dependências, comandos que devem ser 
+- Um README, em inglês, explicando as dependências, comandos que devem ser
+- Crie um token entre a *API* e o front-end
 rodados e as tarefas do seu Task Runner
 - Use SCSS para o CSS
-- Dê suporte aos 2 últimos Browsers
 - Organize e otimize seu código e imagens
-- Autoprefixr, source maps para CSS e JS, .gitignore e .editorconfig
 - Valide os formulários com componentes nativos do AngularJS, sem usar outras
 bibliotecas
-
-### Ganhando pontos extras
-
-_Fat L00ts_
-
-- Uma de suas Tasks ser para cache busting
-- ES6
-- Nos surpreenda (de forma positiva) !
-
 
 Após finalizar o teste, subir em um repositório git e nos enviar o link.
 
