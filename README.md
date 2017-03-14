@@ -1,4 +1,4 @@
-Teste de Java FullStack Univalle
+Teste de Java Univalle
 ========
 
 Nesse teste tentamos simular o que você irá encontrar no dia a dia de trabalho na Univalle.
@@ -27,7 +27,7 @@ Neste teste iremos utilizar o java 8. Como referência de estrutura, utilize o a
 
 3) Faça as modificações abaixo:
 
-a) No grupo de GrupoProdutosDAO crie um filtro, como achar melhor, para os produtos onde o nome começa por um parâmetro String.
+a) No grupo de GrupoProdutosDAO crie um filtro, como achar melhor, para os grupos de produtos que começam por um parâmetro String.
 
 b) Crie a mesma funcionalidade usando stream e lambda.
 
@@ -52,15 +52,14 @@ Além disso cada modelo DEVE implementar um método de validação, faça com qu
 * **A sua tarefa**
 
 A sua tarefa é criar uma aplicação responsiva usando AngularJS, que realize a inserção 
-de um produto na API JAVA, para ser mostrado na tela de produtos, usando _Service_ ou _Factory_.
+de um produto na API JAVA, para ser mostrado na tela de Produtos, usando _Service_ ou _Factory_.
 
 * **As regras**
 
 Esses itens são obrigatórios. Não respeitá-los inválida automaticamente a 
-sua submissão. Criamos algumas telas, mas sinta-se a vontade para criar suas próprias.
+sua submissão. Criamos algumas telas de exemplo, mas sinta-se a vontade para criar suas próprias.
 
-- A aplicação deve ser Responsiva, utilize Frameworks como Bootstrap ou 
-Foundation
+- A aplicação deve ser Responsiva, utilize como framework o Bootstrap
 - Você deve passar os dados entre os _Controllers_ com um _Service_ ou 
 _Factory_
 - Você deve usar algum lint para o CSS e JS
@@ -74,7 +73,7 @@ for modificado
 
 Encare esses itens como "Boas Práticas".
 
-- Um README, em inglês, explicando as dependências, comandos que devem ser
+- Um README, em inglês, explicando as dependências, comandos que devem ser executados
 - Crie um token entre a *API* e o front-end
 rodados e as tarefas do seu Task Runner
 - Use SCSS para o CSS
